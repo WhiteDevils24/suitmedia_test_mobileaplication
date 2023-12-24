@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_imageOutput"
+            android:src="@drawable/default_user_image"
+            app:shapeAppearanceOverlay="@style/circle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/tv_nameOutputUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/img_imageOutput"
+            android:text="First Name Last Name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semi_bold" />
+
+        <TextView
+            android:id="@+id/tv_emailOutputUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_imageOutput"
+            android:layout_below="@id/tv_nameOutputUser"
+            android:layout_marginStart="20dp"
+            android:text="EMAIL@EMAIL.COM"
+            android:textColor="@color/darkgray"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/darkgray"
+            android:layout_below="@id/tv_emailOutputUser"/>
+
+
+
+    </RelativeLayout>
+</layout>
